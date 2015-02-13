@@ -17,7 +17,7 @@ a:hover{
 }
 
 nav{
-
+	height: 35px;
 }
 
 nav ul{
@@ -31,8 +31,8 @@ nav ul li{
 }
 
 #waku-waku-nav{
-	height: 30px;
-	margin: 5px 0 0 0;
+	height: 25px;
+	margin: 10px 0 10px 10px;
 }
 
 .fa{
@@ -42,6 +42,11 @@ nav ul li{
 .social_icons{
 	float: right;
 	margin: 5px 10px 0 0;
+}
+
+.social_icons img{
+	height: 30px;
+	margin-top: 5px;
 }
 
 #hero-img{
@@ -57,6 +62,12 @@ nav ul li{
 
 #home { 
 background: url(img/1920/blue.jpg) 50% 0 no-repeat fixed; min-height: 800px;
+}
+
+#google-map{
+	position: relative;
+	float: right;
+	margin: 10% 5%;
 }
 
 .info-div{
@@ -89,7 +100,7 @@ background: url(img/1920/blue.jpg) 50% 0 no-repeat fixed; min-height: 800px;
 	color: lightpink;
 }
 
-.footer-div{
+.subscribe-div{
 	width: 100%;
 	height: 300px;
 	background-color: #36363d;
@@ -124,6 +135,28 @@ background: url(img/1920/blue.jpg) 50% 0 no-repeat fixed; min-height: 800px;
 	background-color: #fff;
 	color: #36363d;
 	font-weight: 700;
+}
+
+footer{
+	height: 35px;
+}
+
+footer ul li{
+	display: inline-block;
+	float: right;
+	font-family: Raleway;
+	font-size: 16px;
+	color: #aaa;
+	margin-left: 3px;
+}
+
+#copyright{
+	padding-top: 5px;
+}
+
+#azix-logo{
+	height: 20px;
+	margin-left: 5px;
 }
 
 @media screen and (max-width: 800px) {
