@@ -5,8 +5,12 @@ body{
 	margin: 0 auto;
 }
 
-h2, h3, p{
+h2, h3{
 	font-family: Nunito;
+}
+
+p{
+	font-family: Raleway;
 }
 
 a{
@@ -52,28 +56,28 @@ nav ul li{
 }
 
 #hero-img{
-	max-width: 434px;
+	max-width: 350px;
 	margin: 15px auto;
 	padding-top: 10%;
 }
 
-/*.hero img{
+.hero img{
 	width: 100%;
 	max-width: 350px;
-	margin: 50% auto
-}*/
+}
 
 #event-dates{
-	color: #fff;
+	color: #ED3293;
 	text-align: center;
 	font-size: 40px;
+	font-weight: 500;
+	margin-top: 20px;
 }
 
 #home { 
-	background: url(img/1920/blue.jpg) 50% 0 no-repeat fixed; 
+	background: url(assets/waves-pattern.gif) 50% 0 no-repeat fixed; 
 	width: 100%;
-	height: 1000px;
-	min-height: 800px;
+	height: 600px;
 }
 
 #google-map{
@@ -82,30 +86,37 @@ nav ul li{
 	margin: 10% 5%;
 }
 
+#tucker{
+	display: inline-block;	
+	border-radius: 100%;
+	max-height: 200px;
+	max-width: 200px;
+}
+
 .info{
 	position: relative;
-	top: -40px;
 }
 
 .info-div{
 	float: left;
+	position: relative;
 	width: 33.333%;
-	height: 350px;
-	padding-top: 8%;
+	height: 600px;
+	top: 130px;
 	text-align: center;
-	background-color: lightpink;
 }
 
 .info-copy{
 	width: 80%;
 	margin: 0 auto;
 	font-size: 1.2em;
+	line-height: 1.5;
 }
 
 #contact-btn{
 	margin-top: 10px;
 	border: 2px solid #fff;
-	background-color: lightpink;
+	background-color: #57C9E6;
 	padding: 10px 15px;
 	width: 110px;
 	color: #fff;
@@ -114,7 +125,8 @@ nav ul li{
 
 #contact-btn:hover{
 	background-color: #fff;
-	color: lightpink;
+	color: #57C9E6;
+	border: 2px solid #57C9E6;
 }
 
 .subscribe-div{
@@ -190,7 +202,9 @@ footer ul li{
 
  /* large desktop */
 @media screen and (min-width: 1824px) {
-
+	#hero-img{
+		max-width: 434px;
+	}
 }
 
 /* desktops and laptops */
