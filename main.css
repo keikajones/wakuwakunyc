@@ -203,8 +203,19 @@ footer ul li{
 
  /* large desktop */
 @media screen and (min-width: 1824px) {
-	#hero-img{
-		max-width: 434px;
+	nav{
+		height: 50px;
+	}
+	#home{
+		height: 1000px;
+	}
+
+	.hero{
+		padding-top: 5%;
+	}
+
+	#event-dates{
+		font-size: 80px;
 	}
 }
 
