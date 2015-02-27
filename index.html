@@ -8,6 +8,7 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="dist/js/smooth-scroll.js"></script>
 </head>
 
 <body>
@@ -18,13 +19,6 @@
 		</ul>
 	</nav>
 
-	<section id="home" data-type="background" data-speed="10">                              
-		<div class="hero">
-			<div id="hero-img"><img src="assets/Waku-Waku-Logo-V1.gif"/></div>
-      <h2 id="event-dates">August 29-30</h2>
-		</div>
-	</section>
-
   <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
   <script type="text/javascript" src="js/jssor.js"></script>
   <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
@@ -32,58 +26,31 @@
   <!-- Jssor Slider Begin -->
   <!-- You can move inline styles to css file or css block. -->
   <div id="slider1_container" style="position: relative; margin: 0 auto;
-      top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
-    <!-- Loading Screen -->
-    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
-            top: 0px; left: 0px; width: 100%; height: 100%;">
+      top: 0px; left: 0px; width: 1300px; height: 650px; overflow: hidden;">
+    <!-- Slides Container -->
+    <div class="slideshow" u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px;
+        height: 650px; overflow: hidden;">
+        <div>
+          <img u="image" src="assets/hero-img2.jpg" />
         </div>
-        <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
-            top: 0px; left: 0px; width: 100%; height: 100%;">
+        <div>
+          <img u="image" src="assets/hero-img4.jpg" />
+        </div>
+        <div>
+          <img u="image" src="assets/hero-img5.jpg" />
+        </div>
+        <div>
+          <img u="image" src="assets/hero-img1.jpg" />
+        </div>
+        <div>
+          <img u="image" src="assets/hero-img6.jpg" />
         </div>
     </div>
-    <!-- Slides Container -->
-    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
-        height: 500px; overflow: hidden;">
-        <div>
-            <img u="image" src="assets/striped-bkgd.gif" />
-         
-            <div style="position: absolute; width: 600px; height: 120px; top: 130px; left: 80px; padding: 5px;
-                text-align: left; line-height: 60px; text-transform: uppercase; font-size: 46px; font-family: Nunito;
-                    color: #ed2424;">What is Waku Waku?
-            </div>
-            <div style="position: absolute; width: 85%; height: 120px; top: 180px; left: 80px; padding: 5px;
-                text-align: left; line-height: 36px; font-size: 20px; font-family: Raleway; font-weight: 400;
-                    color: grey;">
-                <p>A Japanese expression for excitement and the name of a new Japanese pop culture festival launching this August in Brooklyn.  A celebration of anime, manga, music, food, film, fashion, and more, Waku Waku features guests from Japan, interactive exhibits, workshops, exclusives, and premieres.  Waku Waku encourages creativity and wants all our attendees to feel "waku waku"!</p>
-            </div>
-        </div>
-        <div>
-            <img u="image" src="assets/striped-bkgd.gif" />
-            <div style="position: absolute; width: 480px; height: 120px; top: 100px; left: 80px; padding: 5px;
-                text-align: left; line-height: 60px; text-transform: uppercase; font-size: 46px; font-family: Nunito;
-                    color: #56c8e6;">Where is Waku Waku?
-            </div>
-            <div id="where-div" style="position: absolute; width: 85%; height: 120px; top: 210px; left: 80px; padding: 5px;
-                text-align: left; line-height: 36px; font-size: 20px; font-family: Nunito; font-weight: 300;
-                    color: grey;">
-                    <p style="width: 65%">Waku Waku's HQ will be in the brand new <a href="http://www.brooklynexpocenter.com/" target="_blank">Brooklyn Expo Center</a> with panels, screenings, signings, and special events spread over Brooklyn's Greenpoint and Williamsburg neighborhoods.  Just a short hop from Manhattan by subway or water taxi, Waku Waku combines Cool Japan with New York's coolest borough.</p>
-            </div>
-            <div><iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6047.089801942272!2d-73.958041!3d40.728034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7add2a17a3ff237!2sBrooklyn+EXPO+Center!5e0!3m2!1sen!2sus!4v1424900826195" width="30%" height="300" frameborder="0" style="border:0"></iframe>
-            </div>
-        </div>
-        <div>
-            <img u="image" src="assets/striped-bkgd.gif" />
-            <div style="position: absolute; width: 600px; height: 120px; top: 130px; left: 80px; padding: 5px;
-                text-align: left; line-height: 60px; text-transform: uppercase; font-size: 46px; font-family: Nunito;
-                    color: #f1e913;">Who is Waku Waku?
-            </div>
-            <div style="position: absolute; width: 85%; height: 120px; top: 180px; left: 80px; padding: 5px;
-                text-align: left; line-height: 36px; font-size: 20px; font-family: Nunito; font-weight: 300;
-                    color: grey;">
-                    <p>Waku Waku is run by Azix, a Japanese events and marketing firm with offices in Tokyo and NYC and staff with experience running conventions around the world.  We've also got a dog named Tucker.</p>
-            </div>
-        </div>
+    <div class="hero">
+      <div id="hero-img"><img src="assets/Waku-Waku-Logo-V1.gif"/>
+        <h2 id="event-dates">August 29-30</h2>
+        <a data-scroll href=".info-top"><i class="fa fa-arrow-circle-down fa-2x animated bounce"></i></a>
+      </div>
     </div>
             
     <!-- Bullet Navigator Skin Begin -->
@@ -106,58 +73,46 @@
         .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
         .jssorb21 .av { background-position: -65px -5px; }
         .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+
+        @media screen and (max-width: 400px){
+          .jssorb21 div{
+            display: none;
+          }
+        }
     </style>
     <!-- bullet navigator container -->
-    <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
+    <div u="navigator" class="jssorb21" style="position: absolute; bottom: 90px; left: 6px;">
       <!-- bullet navigator item prototype -->
       <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
     </div>
     <!-- Bullet Navigator Skin End -->
 
-    <!-- Arrow Navigator Skin Begin -->
-    <style>
-        /* jssor slider arrow navigator skin 21 css */
-        /*
-        .jssora21l              (normal)
-        .jssora21r              (normal)
-        .jssora21l:hover        (normal mouseover)
-        .jssora21r:hover        (normal mouseover)
-        .jssora21ldn            (mousedown)
-        .jssora21rdn            (mousedown)
-        */
-        .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn
-        {
-        	position: absolute;
-        	cursor: pointer;
-        	display: block;
-            background: url(assets/a21.png) center center no-repeat;
-            overflow: hidden;
-        }
-        .jssora21l { background-position: -3px -33px; }
-        .jssora21r { background-position: -63px -33px; }
-        .jssora21l:hover { background-position: -123px -33px; }
-        .jssora21r:hover { background-position: -183px -33px; }
-        .jssora21ldn { background-position: -243px -33px; }
-        .jssora21rdn { background-position: -303px -33px; }
-    </style>
-    <!-- Arrow Left -->
-    <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
-    </span>
-    <!-- Arrow Right -->
-    <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
-    </span>
-    <!-- Arrow Navigator Skin End -->
-    <a style="display: none" href="http://www.jssor.com">jQuery Slider</a>
   </div>
   <!-- Jssor Slider End -->
+
+  <section class="info-top">
+    <div class="info-top-div" id="what">
+      <h2>What is Waku Waku?</h2>
+      <p class="info-copy">
+        A Japanese expression for excitement and the name of a new Japanese pop culture festival launching this August in Brooklyn.  A celebration of anime, manga, music, food, film, fashion, and more, Waku Waku features guests from Japan, interactive exhibits, workshops, exclusives, and premieres.  Waku Waku encourages creativity and wants all our attendees to feel "waku waku"!
+      </p>
+    </div>
+    <div class="info-top-div" id="where">
+      <h2>Where is Waku Waku?</h2>
+      <p class="info-copy">
+        Waku Waku's HQ will be in the brand new <a href="http://www.brooklynexpocenter.com/" target="_blank">Brooklyn Expo Center</a> with panels, screenings, signings, and special events spread over Brooklyn's Greenpoint and Williamsburg neighborhoods.  Just a short hop from Manhattan by subway or water taxi, Waku Waku combines Cool Japan with New York's coolest borough.
+      </p>
+    </div>
+  </section>
+
+  <br style="clear">
 
   <section class="info">
   	<div class="info-div" id="exhibitor">
   		<h2>Exhibit at Waku Waku!</h2>
   		<p class="info-copy">
   			Are you an artist or company <br> that wants to be sell or promote <br> your work at Waku Waku?  <br> Please contact us! 
-  		</p>
-
+  		</p><br><br>
   		<a href="https://docs.google.com/forms/d/1BtkErcKSasvqAZXGDfpoFT2At_YS-NkLvFAiR4xM3Cg/" target="_blank"><button id="contact-btn">Contact Us</button></a>
   	</div>
 
@@ -165,7 +120,7 @@
   		<h2>Be Waku Waku!</h2>
   		<p class="info-copy">
         Your ticket to Waku Waku gives you access to exhibits, panels, screenings, and signings across Greenpoint and Williamsburg.
-  		</p>
+  		</p><br><br>
       <a href="http://www.brownpapertickets.com/event/1303079" target="_blank"><button id="contact-btn">Buy Now</button></a>
   	</div>
 
